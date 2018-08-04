@@ -1,0 +1,62 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.pagination {
+  margin-bottom: 30px;
+}
+
+.form-group {
+    margin-right: 8px;
+}
+
+.invalid-feedback {
+    width: 50%;
+    margin-left: 5px;
+}
+
+.name {
+    margin-right: 30px;
+    color: #007bff;
+    font-size: 16px;
+}
+
+.name + a {
+    font-size: 16px;
+}
+
+.create, .edit {
+    margin: 20px 70px 70px;
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+.setbtn .btn {
+    display: inline-block;
+    float: right;
+    margin-right: 5px;
+}
+
+.setbtn .author {
+    display: inline-block;
+    float: left;
+    margin-bottom: 0;
+    margin-left: -18px;
+    margin-top: 1rem;
+}
+
+.pagination {
+    padding-left: 50%;
+}
