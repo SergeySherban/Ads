@@ -17,8 +17,7 @@ class AdvertController extends Controller
      */
     public function index()
     {
-        $advert = DB::table('adverts')->paginate(6);
-		
+        $advert = Advert::orderBy('created_at', 'desc')->paginate(6);
 		return view('profile.index', [
 			'advert' => $advert
 		]);

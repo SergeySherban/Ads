@@ -13,12 +13,13 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 
+
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Auth::routes();
 
 Route::get('/profile', 'ProfileController@index')->name('profile');
-
+Route::get('/{id}', 'HomeController@show')->name('show');
 Route::get('/profile/{advert}/edit', 'AdvertController@edit')->name('profile.edit');
 
 Route::put('/profile/{advert}/', 'AdvertController@update')->name('profile.update');

@@ -58,6 +58,14 @@ class RegisterController extends Controller
         }
     }*/
     
+    public function authenticate()
+    {
+        $credentials = $request->only('name', 'password');
+        if (Auth::attempt($credentials)) {
+            return redirect()->intended('profile');
+        }
+    }
+    
     protected function validator(array $data)
     {
         return Validator::make($data, [

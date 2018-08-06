@@ -10,9 +10,17 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $advert = DB::table('adverts')->paginate(6);
+        $advert = Advert::orderBy('created_at', 'desc')->paginate(6);
         return view('home', [
             'adverts'=>$advert
+        ]);
+    }
+    
+    public function show($id)
+    {
+        $advert = Advert::find($id);
+        return view('show', [
+            'adverts' => $advert
         ]);
     }
 }

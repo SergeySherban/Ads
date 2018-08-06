@@ -13,9 +13,7 @@
             <div class="card">
                 <img class="card-img-top" src="uploads/poster/{{ $a->poster }}" alt="poster">
                 <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="#">{{ $a->title }}</a>
-                    </h4>
+                    <h4 class="card-title">{{ $a->title }}             </h4>
                     <p class="card-text">
                         <small class="text-muted">Added: {{ $a->created_at }}</small>
                     </p>

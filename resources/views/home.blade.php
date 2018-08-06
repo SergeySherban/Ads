@@ -10,10 +10,10 @@
         @foreach($adverts as $a)
         <div class="col-lg-4 col-sm-6 portfolio-item">
             <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="uploads/poster/{{ $a->poster }}" alt="poster"></a>
+                <img class="card-img-top" src="uploads/poster/{{ $a->poster }}" alt="poster">
                 <div class="card-body">
                     <h4 class="card-title">
-                        <a href="#">{{ $a->title }}</a>
+                        <a href="{{ route('show', $a->id) }}">{{ $a->title }}</a>
                     </h4>
                     <p class="card-text">
                         <small class="text-muted">Added: {{ $a->created_at }}</small>
