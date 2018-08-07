@@ -6,7 +6,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Register') }}" class="form-inline ml-auto">
+            <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}" class="form-inline ml-auto">
                 @csrf
                 <div class="form-group">
                     <label for="name" class="sr-only">{{ __('Name') }}</label>
